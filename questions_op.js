@@ -76,7 +76,7 @@ q_btn.addEventListener("click",e =>{
 			document.getElementById("PAST").appendChild(pq);
 			passed_questions.push(bible_q);
 		}
-	}else if (category.value === "adult-fun"){
+	}else if (category.value === "adult"){
 		adult_q = ADULTS[Math.floor(Math.random()* ADULTS.length)];
 		already_q = passed_questions.find((question) =>{return question === adult_q;});
 		if(already_q === adult_q){
